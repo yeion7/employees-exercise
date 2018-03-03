@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import Table from './components/Table'
-import Search from './components/Search'
-import Actions from './components/Actions'
+import React, { Component } from 'react';
+import Table from './components/Table';
+import Search from './components/Search';
+import Actions from './components/Actions';
 
-import employees from './employees'
+import employees from './employees';
 
-import { compareBy } from './utils'
+import { compareBy, createEmploy } from './utils';
 
 class App extends Component {
   state = {
@@ -26,12 +26,12 @@ class App extends Component {
    * @return {void}     not return, set a state
    */
   sortBy = key => () => {
-    const isSorted = key === this.state.sortedBy
+    const isSorted = key === this.state.sortedBy;
 
     this.setState(state => ({
       sortedBy: isSorted ? null : key,
       data: isSorted ? employees : [...this.state.data].sort(compareBy(key))
-    }))
+    }));
   };
 
   /**
@@ -39,8 +39,8 @@ class App extends Component {
    * @return {void} Calculate depends current state
    */
   changeCurrency = () => {
-    const isMXN = this.state.currency === 'MXN'
-    this.setState({ currency: isMXN ? 'USD' : 'MXN' })
+    const isMXN = this.state.currency === 'MXN';
+    this.setState({ currency: isMXN ? 'USD' : 'MXN' });
   };
 
   /**
@@ -49,7 +49,7 @@ class App extends Component {
    */
 
   printTable = () => {
-    console.table(this.state.data)
+    console.table(this.state.data);
   };
 
   /**
@@ -61,7 +61,7 @@ class App extends Component {
   deleteEmploy = id => {
     this.setState(state => ({
       data: state.data.filter(employ => employ.id !== id)
-    }))
+    }));
   };
 
   /**
@@ -70,25 +70,53 @@ class App extends Component {
    * @return {void}   setState with value
    */
   onSearch = e => {
-    this.setState({ search: e.target.value })
+    this.setState({ search: e.target.value });
   };
 
+  /**
+   * save input data of every field
+   * @param  {number|string} id  ID field
+   * @param  {string} key name field key
+   * @return {HTMLEvent}     input event
+   */
   onEditField = (id, key) => e => {
     const newData = this.state.data.map(employ => {
       if (employ.id === id) {
-        employ[key] = e.target.value
+        employ[key] = e.target.value;
       }
-      return employ
-    })
+      return employ;
+    });
 
-    this.setState({ data: newData })
+    this.setState({ data: newData });
   };
+
+  /**
+   * Clean all field of added value (avoid enable company editable)
+   * toggle editableState
+   * @return {void}
+   */
 
   toggleEdit = () => {
-    this.setState({ editable: !this.state.editable })
+    const newData = this.state.data.map(employ => {
+      if (employ.added) {
+        delete employ.added;
+      }
+
+      return employ;
+    });
+
+    this.setState({ editable: !this.state.editable, data: newData });
   };
 
-  render () {
+  /**
+   * Generate a new employ and append to data
+   */
+  addEmploy = () => {
+    const newEmploy = createEmploy();
+    this.setState({ data: [newEmploy, ...this.state.data], editable: true });
+  };
+
+  render() {
     const {
       data,
       sortedBy,
@@ -96,13 +124,13 @@ class App extends Component {
       changeType,
       search,
       editable
-    } = this.state
+    } = this.state;
     return (
       <main>
         <Search onSearch={this.onSearch} />
 
         <Actions
-          onAddEmploy={() => {}}
+          addEmploy={this.addEmploy}
           toggleEdit={this.toggleEdit}
           changeCurrency={this.changeCurrency}
           currency={currency}
@@ -121,8 +149,8 @@ class App extends Component {
           editable={editable}
         />
       </main>
-    )
+    );
   }
 }
 
-export default App
+export default App;

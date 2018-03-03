@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Row from '../Row'
-import { normalizeString } from '../../utils'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Row from '../Row';
+import { normalizeString } from '../../utils';
 
 const Heading = ({ text, name, sortBy, sortedBy, currency }) => {
   return (
@@ -11,8 +11,8 @@ const Heading = ({ text, name, sortBy, sortedBy, currency }) => {
     >
       {text}
     </th>
-  )
-}
+  );
+};
 
 const Table = ({
   employees,
@@ -25,40 +25,40 @@ const Table = ({
   onEditField,
   editable
 }) => {
-  const searchNormalized = normalizeString(search)
+  const searchNormalized = normalizeString(search);
   return (
     <table>
       <thead>
         <tr>
           <Heading
             sortBy={sortBy}
-            name='name'
-            text='nombre'
+            name="name"
+            text="nombre"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='company'
-            text='Compañía'
+            name="company"
+            text="Compañía"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='salary'
-            text='Salario'
+            name="salary"
+            text="Salario"
             sortedBy={sortedBy}
           />
-          <Heading sortBy={sortBy} name='age' text='Edad' sortedBy={sortedBy} />
+          <Heading sortBy={sortBy} name="age" text="Edad" sortedBy={sortedBy} />
           <Heading
             sortBy={sortBy}
-            name='phone'
-            text='Télefono'
+            name="phone"
+            text="Télefono"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='email'
-            text='Correo'
+            name="email"
+            text="Correo"
             sortedBy={sortedBy}
           />
           <th>Borrar</th>
@@ -84,13 +84,13 @@ const Table = ({
           ))}
       </tbody>
     </table>
-  )
-}
+  );
+};
 
 Table.propTypes = {
   employees: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       name: PropTypes.string.isRequired,
       company: PropTypes.string.isRequired,
       salary: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -99,6 +99,6 @@ Table.propTypes = {
       email: PropTypes.string.isRequired
     })
   ).isRequired
-}
+};
 
-export default Table
+export default Table;
