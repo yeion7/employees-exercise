@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
  * If edit a field not re-render every field
  */
 
-class Row extends React.PureComponent {
+class Row extends PureComponent {
   render() {
     const {
       id,

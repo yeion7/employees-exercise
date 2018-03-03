@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const Actions = ({
   onAddEmploy,
@@ -8,7 +8,8 @@ const Actions = ({
   currency,
   printTable,
   editable,
-  addEmploy
+  addEmploy,
+  returnOriginal
 }) => {
   return (
     <div>
@@ -18,14 +19,15 @@ const Actions = ({
         Mostrar en {currency === 'MXN' ? 'Dolares' : 'Pesos'}
       </button>
       <button onClick={printTable}>Imprimir en consola</button>
+      <button onClick={returnOriginal}>Eliminar cambios</button>
     </div>
-  );
-};
+  )
+}
 
 Actions.propTypes = {
   addEmploy: PropTypes.func.isRequired,
   toggleEdit: PropTypes.func.isRequired,
   changeCurrency: PropTypes.func.isRequired
-};
+}
 
-export default Actions;
+export default Actions
