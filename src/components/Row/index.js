@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
 /**
  * This element use PureComponent for optimize edit mode
@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
  */
 
 class Row extends PureComponent {
-  render() {
+  render () {
     const {
       id,
       name,
@@ -22,9 +22,9 @@ class Row extends PureComponent {
       deleteEmploy,
       editable,
       onEditField
-    } = this.props;
+    } = this.props
 
-    const salaryValue = currency === 'USD' ? salary / changeType : salary;
+    const salaryValue = currency === 'USD' ? salary / changeType : salary
 
     return (
       <tr>
@@ -48,7 +48,7 @@ class Row extends PureComponent {
         <td>
           {editable ? (
             <input
-              type="number"
+              type='number'
               defaultValue={salary}
               onChange={onEditField(id, 'salary')}
             />
@@ -68,7 +68,7 @@ class Row extends PureComponent {
         <td>
           {editable ? (
             <input
-              type="number"
+              type='number'
               defaultValue={age}
               onChange={onEditField(id, 'age')}
             />
@@ -86,7 +86,7 @@ class Row extends PureComponent {
         <td>
           {editable ? (
             <input
-              type="email"
+              type='email'
               defaultValue={email}
               onChange={onEditField(id, 'email')}
             />
@@ -98,7 +98,7 @@ class Row extends PureComponent {
           <button onClick={() => deleteEmploy(id)}>Borrar</button>
         </td>
       </tr>
-    );
+    )
   }
 }
 
@@ -110,6 +110,6 @@ Row.propTypes = {
   age: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   phone: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired
-};
+}
 
-export default Row;
+export default Row

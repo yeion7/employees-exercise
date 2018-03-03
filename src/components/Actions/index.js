@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Actions = ({
-  onAddEmploy,
   toggleEdit,
   changeCurrency,
   currency,
@@ -27,7 +26,11 @@ const Actions = ({
 Actions.propTypes = {
   addEmploy: PropTypes.func.isRequired,
   toggleEdit: PropTypes.func.isRequired,
-  changeCurrency: PropTypes.func.isRequired
+  changeCurrency: PropTypes.func.isRequired,
+  currency: PropTypes.string.isRequired,
+  printTable: PropTypes.func.isRequired,
+  editable: PropTypes.bool.isRequired,
+  returnOriginal: PropTypes.func.isRequired
 }
 
 export default Actions
