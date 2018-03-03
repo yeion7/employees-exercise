@@ -3,27 +3,32 @@
 exports[`Actions component renders correctly with MXN and not editable 1`] = `
 <div>
   <button
+    data-test="add"
     onClick={[Function]}
   >
     Agregar empleado
   </button>
   <button
+    data-test="edit"
     onClick={[Function]}
   >
     Editar
   </button>
   <button
+    data-test="currency"
     onClick={[Function]}
   >
     Mostrar en 
     Dolares
   </button>
   <button
+    data-test="print"
     onClick={[Function]}
   >
     Imprimir en consola
   </button>
   <button
+    data-test="delete"
     onClick={[Function]}
   >
     Eliminar cambios
@@ -34,27 +39,32 @@ exports[`Actions component renders correctly with MXN and not editable 1`] = `
 exports[`Actions component renders correctly with USD and  editable 1`] = `
 <div>
   <button
+    data-test="add"
     onClick={[Function]}
   >
     Agregar empleado
   </button>
   <button
+    data-test="edit"
     onClick={[Function]}
   >
     Guardar
   </button>
   <button
+    data-test="currency"
     onClick={[Function]}
   >
     Mostrar en 
     Pesos
   </button>
   <button
+    data-test="print"
     onClick={[Function]}
   >
     Imprimir en consola
   </button>
   <button
+    data-test="delete"
     onClick={[Function]}
   >
     Eliminar cambios

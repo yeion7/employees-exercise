@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
  */
 
 class Row extends PureComponent {
-  render () {
+  render() {
     const {
       id,
       name,
@@ -30,7 +30,11 @@ class Row extends PureComponent {
       <tr>
         <td>
           {editable ? (
-            <input defaultValue={name} onChange={onEditField(id, 'name')} />
+            <input
+              data-test={`input-name-${id}`}
+              defaultValue={name}
+              onChange={onEditField(id, 'name')}
+            />
           ) : (
             <span>{name}</span>
           )}
@@ -38,6 +42,7 @@ class Row extends PureComponent {
         <td>
           {editable && added ? (
             <input
+              data-test={`input-company-${id}`}
               defaultValue={company}
               onChange={onEditField(id, 'company')}
             />
@@ -48,7 +53,8 @@ class Row extends PureComponent {
         <td>
           {editable ? (
             <input
-              type='number'
+              data-test={`input-salary-${id}`}
+              type="number"
               defaultValue={salary}
               onChange={onEditField(id, 'salary')}
             />
@@ -68,7 +74,8 @@ class Row extends PureComponent {
         <td>
           {editable ? (
             <input
-              type='number'
+              data-test={`input-age-${id}`}
+              type="number"
               defaultValue={age}
               onChange={onEditField(id, 'age')}
             />
@@ -78,7 +85,11 @@ class Row extends PureComponent {
         </td>
         <td>
           {editable ? (
-            <input defaultValue={phone} onChange={onEditField(id, 'phone')} />
+            <input
+              data-test={`input-phone-${id}`}
+              defaultValue={phone}
+              onChange={onEditField(id, 'phone')}
+            />
           ) : (
             <span>{phone}</span>
           )}
@@ -86,7 +97,8 @@ class Row extends PureComponent {
         <td>
           {editable ? (
             <input
-              type='email'
+              data-test={`input-email-${id}`}
+              type="email"
               defaultValue={email}
               onChange={onEditField(id, 'email')}
             />
@@ -95,7 +107,9 @@ class Row extends PureComponent {
           )}
         </td>
         <td>
-          <button onClick={() => deleteEmploy(id)}>Borrar</button>
+          <button data-test={`delete-${id}`} onClick={() => deleteEmploy(id)}>
+            Borrar
+          </button>
         </td>
       </tr>
     )

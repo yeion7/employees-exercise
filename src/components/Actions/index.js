@@ -12,13 +12,21 @@ const Actions = ({
 }) => {
   return (
     <div>
-      <button onClick={addEmploy}>Agregar empleado</button>
-      <button onClick={toggleEdit}>{editable ? 'Guardar' : 'Editar'}</button>
-      <button onClick={changeCurrency}>
+      <button data-test="add" onClick={addEmploy}>
+        Agregar empleado
+      </button>
+      <button data-test="edit" onClick={toggleEdit}>
+        {editable ? 'Guardar' : 'Editar'}
+      </button>
+      <button data-test="currency" onClick={changeCurrency}>
         Mostrar en {currency === 'MXN' ? 'Dolares' : 'Pesos'}
       </button>
-      <button onClick={printTable}>Imprimir en consola</button>
-      <button onClick={returnOriginal}>Eliminar cambios</button>
+      <button data-test="print" onClick={printTable}>
+        Imprimir en consola
+      </button>
+      <button data-test="delete" onClick={returnOriginal}>
+        Eliminar cambios
+      </button>
     </div>
   )
 }

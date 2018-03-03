@@ -89,7 +89,9 @@ class App extends Component {
   onEditField = (id, key) => (e) => {
     const newData = this.state.data.map((employ) => {
       if (employ.id === id) {
-        employ[key] = e.target.value
+        return Object.assign({}, employ, {
+          [key]: e.target.value
+        })
       }
       return employ
     })
@@ -121,6 +123,7 @@ class App extends Component {
    */
   addEmploy = () => {
     const newEmploy = createEmploy()
+
     this.setState({ data: [newEmploy, ...this.state.data], editable: true })
   }
 

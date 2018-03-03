@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jest-enzyme": "^4.2.0",
     "react": "16.2.0",
     "react-dom": "16.2.0"
   },
@@ -31,5 +32,13 @@
   "standard": {
     "parser": "babel-eslint",
     "globals": ["it", "localStorage", "jest", "expect"]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ]
   }
 }

@@ -5,8 +5,9 @@ const Search = ({ onSearch }) => {
   return (
     <div>
       <input
-        type='search'
-        placeholder='Buscar empleado o empresa'
+        data-test="input"
+        type="search"
+        placeholder="Buscar empleado o empresa"
         onChange={onSearch}
       />
     </div>

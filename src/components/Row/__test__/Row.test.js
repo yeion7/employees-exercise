@@ -77,4 +77,28 @@ describe('Row component', () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
+
+  it('renders correctly without salary', () => {
+    const fn = jest.fn()
+    const factory = jest.fn(() => jest.fn())
+
+    const tree = renderer
+      .create(
+        <Row
+          id={employ.id}
+          name={employ.name}
+          company={employ.company}
+          age={employ.age}
+          phone={employ.phone}
+          email={employ.email}
+          currency="USD"
+          changeType={19.9}
+          editable={true}
+          deleteEmploy={fn}
+          onEditField={factory}
+        />
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })

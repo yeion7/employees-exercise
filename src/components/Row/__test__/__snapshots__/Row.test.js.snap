@@ -40,6 +40,7 @@ exports[`Row component renders correctly with MXN 1`] = `
   </td>
   <td>
     <button
+      data-test="delete-0"
       onClick={[Function]}
     >
       Borrar
@@ -88,6 +89,7 @@ exports[`Row component renders correctly with USD 1`] = `
   </td>
   <td>
     <button
+      data-test="delete-0"
       onClick={[Function]}
     >
       Borrar
@@ -100,6 +102,7 @@ exports[`Row component renders correctly with editable mode 1`] = `
 <tr>
   <td>
     <input
+      data-test="input-name-0"
       defaultValue="Eduardo González"
       onChange={[Function]}
     />
@@ -111,6 +114,7 @@ exports[`Row component renders correctly with editable mode 1`] = `
   </td>
   <td>
     <input
+      data-test="input-salary-0"
       defaultValue={5400}
       onChange={[Function]}
       type="number"
@@ -118,6 +122,7 @@ exports[`Row component renders correctly with editable mode 1`] = `
   </td>
   <td>
     <input
+      data-test="input-age-0"
       defaultValue={57}
       onChange={[Function]}
       type="number"
@@ -125,12 +130,14 @@ exports[`Row component renders correctly with editable mode 1`] = `
   </td>
   <td>
     <input
+      data-test="input-phone-0"
       defaultValue="(886) 271 4211"
       onChange={[Function]}
     />
   </td>
   <td>
     <input
+      data-test="input-email-0"
       defaultValue="eduardo@gmail.com"
       onChange={[Function]}
       type="email"
@@ -138,6 +145,63 @@ exports[`Row component renders correctly with editable mode 1`] = `
   </td>
   <td>
     <button
+      data-test="delete-0"
+      onClick={[Function]}
+    >
+      Borrar
+    </button>
+  </td>
+</tr>
+`;
+
+exports[`Row component renders correctly without salary 1`] = `
+<tr>
+  <td>
+    <input
+      data-test="input-name-0"
+      defaultValue="Eduardo González"
+      onChange={[Function]}
+    />
+  </td>
+  <td>
+    <span>
+      América Móvil
+    </span>
+  </td>
+  <td>
+    <input
+      data-test="input-salary-0"
+      defaultValue={0}
+      onChange={[Function]}
+      type="number"
+    />
+  </td>
+  <td>
+    <input
+      data-test="input-age-0"
+      defaultValue={57}
+      onChange={[Function]}
+      type="number"
+    />
+  </td>
+  <td>
+    <input
+      data-test="input-phone-0"
+      defaultValue="(886) 271 4211"
+      onChange={[Function]}
+    />
+  </td>
+  <td>
+    <input
+      data-test="input-email-0"
+      defaultValue="eduardo@gmail.com"
+      onChange={[Function]}
+      type="email"
+    />
+  </td>
+  <td>
+    <button
+      data-test="delete-0"
       onClick={[Function]}
     >
       Borrar

@@ -6,6 +6,7 @@ import { normalizeString } from '../../utils'
 const Heading = ({ text, name, sortBy, sortedBy, currency }) => {
   return (
     <th
+      data-test={`sort-${name}`}
       onClick={sortBy(name)}
       style={{ background: `${sortedBy === name ? 'palegreen' : ''}` }}
     >
@@ -32,33 +33,33 @@ const Table = ({
         <tr>
           <Heading
             sortBy={sortBy}
-            name='name'
-            text='nombre'
+            name="name"
+            text="nombre"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='company'
-            text='Compañía'
+            name="company"
+            text="Compañía"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='salary'
-            text='Salario'
+            name="salary"
+            text="Salario"
             sortedBy={sortedBy}
           />
-          <Heading sortBy={sortBy} name='age' text='Edad' sortedBy={sortedBy} />
+          <Heading sortBy={sortBy} name="age" text="Edad" sortedBy={sortedBy} />
           <Heading
             sortBy={sortBy}
-            name='phone'
-            text='Télefono'
+            name="phone"
+            text="Télefono"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='email'
-            text='Correo'
+            name="email"
+            text="Correo"
             sortedBy={sortedBy}
           />
           <th>Borrar</th>
@@ -67,11 +68,11 @@ const Table = ({
       <tbody>
         {employees
           .filter(
-            employ =>
+            (employ) =>
               normalizeString(employ.name).includes(searchNormalized) ||
               normalizeString(employ.company).includes(searchNormalized)
           )
-          .map(employ => (
+          .map((employ) => (
             <Row
               {...employ}
               key={employ.id}

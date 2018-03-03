@@ -3,6 +3,7 @@
 exports[`Search component renders correctly 1`] = `
 <div>
   <input
+    data-test="input"
     onChange={[Function]}
     placeholder="Buscar empleado o empresa"
     type="search"
