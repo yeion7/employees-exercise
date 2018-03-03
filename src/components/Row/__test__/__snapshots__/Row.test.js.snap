@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row component renders correctly with MXN 1`] = `
+<tr>
+  <td>
+    <span>
+      Eduardo González
+    </span>
+  </td>
+  <td>
+    <span>
+      América Móvil
+    </span>
+  </td>
+  <td>
+    <span
+      style={
+        Object {
+          "color": "indianred",
+        }
+      }
+    >
+      MX$ 5,400.00
+    </span>
+  </td>
+  <td>
+    <span>
+      57
+    </span>
+  </td>
+  <td>
+    <span>
+      (886) 271 4211
+    </span>
+  </td>
+  <td>
+    <span>
+      eduardo@gmail.com
+    </span>
+  </td>
+  <td>
+    <button
+      onClick={[Function]}
+    >
+      Borrar
+    </button>
+  </td>
+</tr>
+`;
+
+exports[`Row component renders correctly with USD 1`] = `
+<tr>
+  <td>
+    <span>
+      Eduardo González
+    </span>
+  </td>
+  <td>
+    <span>
+      América Móvil
+    </span>
+  </td>
+  <td>
+    <span
+      style={
+        Object {
+          "color": "indianred",
+        }
+      }
+    >
+      US$ 271.00
+    </span>
+  </td>
+  <td>
+    <span>
+      57
+    </span>
+  </td>
+  <td>
+    <span>
+      (886) 271 4211
+    </span>
+  </td>
+  <td>
+    <span>
+      eduardo@gmail.com
+    </span>
+  </td>
+  <td>
+    <button
+      onClick={[Function]}
+    >
+      Borrar
+    </button>
+  </td>
+</tr>
+`;
+
+exports[`Row component renders correctly with editable mode 1`] = `
+<tr>
+  <td>
+    <input
+      defaultValue="Eduardo González"
+      onChange={[Function]}
+    />
+  </td>
+  <td>
+    <span>
+      América Móvil
+    </span>
+  </td>
+  <td>
+    <input
+      defaultValue={5400}
+      onChange={[Function]}
+      type="number"
+    />
+  </td>
+  <td>
+    <input
+      defaultValue={57}
+      onChange={[Function]}
+      type="number"
+    />
+  </td>
+  <td>
+    <input
+      defaultValue="(886) 271 4211"
+      onChange={[Function]}
+    />
+  </td>
+  <td>
+    <input
+      defaultValue="eduardo@gmail.com"
+      onChange={[Function]}
+      type="email"
+    />
+  </td>
+  <td>
+    <button
+      onClick={[Function]}
+    >
+      Borrar
+    </button>
+  </td>
+</tr>
+`;
