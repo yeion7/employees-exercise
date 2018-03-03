@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actions component renders correctly with MXN and not editable 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Agregar empleado
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Editar
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Mostrar en 
+    Dolares
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Imprimir en consola
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Eliminar cambios
+  </button>
+</div>
+`;
+
+exports[`Actions component renders correctly with USD and  editable 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Agregar empleado
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Guardar
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Mostrar en 
+    Pesos
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Imprimir en consola
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Eliminar cambios
+  </button>
+</div>
+`;
