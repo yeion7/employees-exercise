@@ -10,7 +10,10 @@ import { compareBy } from './utils'
 class App extends Component {
   state = {
     sortedBy: null,
-    data: employees
+    data: employees,
+    currency: 'MXN',
+    changeType: 21.50,
+    search: ""
   }
 
   /**
@@ -32,20 +35,67 @@ class App extends Component {
     )
   }
 
+  /**
+   * Toggle MXN to USD ot USD to MXN, and setState with current
+   * @return {void} Calculate depends current state
+   */
+  changeCurrency = () => {
+    const isMXN = this.state.currency === 'MXN'
+    this.setState({currency: isMXN ? 'USD' : 'MXN'})
+  }
+
+  /**
+   * Print table on state
+   * @return {void} use the data on state
+   */
+
+  printTable = () => {
+    console.table(this.state.data)
+  }
+
+  /**
+   * Filter employees data using the id
+   * @param  {Number} id id employ
+   * @return {void}    setState with filter result
+   */
+
+  deleteEmploy = (id) => {
+    this.setState(state =>
+      ({data: state.data.filter(employ => employ.id !== id)})
+    )
+  }
+
+  /**
+   * Recive a input event and use the value for setState
+   * @param  {HTMLEvent} e Event
+   * @return {void}   setState with value
+   */
+
+  onSearch = (e) => {
+    this.setState({search: e.target.value})
+  }
+
   render () {
-    const { data, sortedBy } = this.state
+    const { data, sortedBy, currency,changeType, search } = this.state
     return (
       <main>
-        <Search onSearch={() => {}} />
+        <Search onSearch={this.onSearch} />
+
         <Actions
           onAddEmploy={() => {}}
           onEdit={() => {}}
-          onShowPrice={() => {}}
+          changeCurrency={this.changeCurrency}
+          currency={currency}
+          printTable={this.printTable}
         />
         <Table
           employees={data}
           sortBy={this.sortBy}
+          deleteEmploy={this.deleteEmploy}
           sortedBy={sortedBy}
+          changeType={changeType}
+          currency={currency}
+          search={search}
         />
       </main>
     )

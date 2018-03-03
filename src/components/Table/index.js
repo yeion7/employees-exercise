@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Row from '../Row'
+import { normalizeString } from '../../utils'
 
-const Heading = ({text, name, sortBy, sortedBy}) => {
+const Heading = ({text, name, sortBy, sortedBy, currency }) => {
   return (<th
     onClick={sortBy(name)}
     style={{background: `${sortedBy === name ? 'palegreen' : ''}`}}>
@@ -10,7 +11,9 @@ const Heading = ({text, name, sortBy, sortedBy}) => {
   </th>)
 }
 
-const Table = ({employees, sortBy, sortedBy}) => {
+const Table = ({employees, sortBy, sortedBy, currency, changeType, deleteEmploy, search}) => {
+
+  const searchNormalized = normalizeString(search)
   return (
     <table>
       <thead>
@@ -26,7 +29,19 @@ const Table = ({employees, sortBy, sortedBy}) => {
       </thead>
       <tbody>
         {
-          employees.map(employ => <Row key={employ.id} {...employ} />)
+          employees
+          .filter(employ =>
+            normalizeString(employ.name).includes(searchNormalized) ||
+            normalizeString(employ.company).includes(searchNormalized)
+            )
+          .map(employ =>
+            <Row
+              {...employ}
+              key={employ.id}
+              currency={currency}
+              changeType={changeType}
+              deleteEmploy={deleteEmploy}
+            />)
         }
       </tbody>
     </table>

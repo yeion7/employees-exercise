@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 const Search = ({onSearch}) => {
   return (
     <div>
-      <form>
-        <input type='text' placeholder='Buscar empleado o empresa' />
-        <button>Buscar</button>
-      </form>
+        <input
+          type='text'
+           placeholder='Buscar empleado o empresa'
+           onChange={onSearch}/>
     </div>
   )
 }

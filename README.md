@@ -2,21 +2,21 @@
 
 ## Para JS
 
-- [ ] Clona el proyecto e instala las dependencias
-- [ ] El archivo `src/App.js` crear una tabla que muestre todos las propiedades de los empleados
-- [ ] El salario está en pesos mexicanos
-- [ ] Mostrar el salario en formato de dinero, es decir 16900 se muestra como $ 16,900.00
-- [ ] Si el salario tuviera decimales se deben mostrar limitados a 2 decimales, es decir 16900.333 se debe mostrar como $ 16,900.33
+- [x] Clona el proyecto e instala las dependencias
+- [x] El archivo `src/App.js` crear una tabla que muestre todos las propiedades de los empleados
+- [x] El salario está en pesos mexicanos
+- [x] Mostrar el salario en formato de dinero, es decir 16900 se muestra como $ 16,900.00
+- [x] Si el salario tuviera decimales se deben mostrar limitados a 2 decimales, es decir 16900.333 se debe mostrar como $ 16,900.33
 - [ ] Agregar empleados (Un botón al principio o final de la tabla)
 - [ ] Editar empleados (Un botón al principio o final de la tabla)
 - [ ] El nombre de la empresa no se debe poder modificar
-- [ ] Borrar empleados (Un botón de borrar por cada empleado)
-- [ ] Agregar un botón que muestre los salarios en USD, tipo de cambio de US $1 = MXN $21.50
-- [ ] Estado con empleados, si se están mostrando los salarios con MXN o USD,el tipo de cambio
-- [ ] Poder filtrar empleados con un campo que permita buscar a los empleados por nombre y empresa
-- [ ] El mismo campo debe funcionar para nombre y empresa
-- [ ] Se deben actualizar los resultados conforme se vayan escribiendo
-- [ ] Agregar un botón que imprima la lista de empleados a la consola
+- [x] Borrar empleados (Un botón de borrar por cada empleado)
+- [x] Agregar un botón que muestre los salarios en USD, tipo de cambio de US $1 = MXN $21.50
+- [x] Estado con empleados, si se están mostrando los salarios con MXN o USD,el tipo de cambio
+- [x] Poder filtrar empleados con un campo que permita buscar a los empleados por nombre y empresa
+- [x] El mismo campo debe funcionar para nombre y empresa
+- [x] Se deben actualizar los resultados conforme se vayan escribiendo
+- [x] Agregar un botón que imprima la lista de empleados a la consola
 
 ## Para CSS
 

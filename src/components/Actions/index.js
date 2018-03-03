@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Actions = ({onAddEmploy, onEdit, onShowPrice}) => {
+const Actions = ({onAddEmploy, onEdit, changeCurrency, currency, printTable}) => {
   return (
     <div>
       <button>
@@ -10,8 +10,11 @@ const Actions = ({onAddEmploy, onEdit, onShowPrice}) => {
       <button>
         Editar
       </button>
-      <button>
-        Mostrar en USD
+      <button onClick={changeCurrency}>
+        Mostrar en {currency === 'MXN' ? 'Dolares' : 'Pesos'}
+      </button>
+      <button onClick={printTable}>
+        Imprimir en consola
       </button>
     </div>
   )
@@ -20,7 +23,7 @@ const Actions = ({onAddEmploy, onEdit, onShowPrice}) => {
 Actions.propTypes = {
   onAddEmploy: PropTypes.func.isRequired,
   onEdit: PropTypes.func.isRequired,
-  onShowPrice: PropTypes.func.isRequired
+  changeCurrency: PropTypes.func.isRequired
 }
 
 export default Actions
