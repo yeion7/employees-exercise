@@ -1,0 +1,1712 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table component renders correctly 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        nombre
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Compañía
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Salario
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Edad
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Télefono
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Correo
+      </th>
+      <th>
+        Borrar
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span>
+          Eduardo González
+        </span>
+      </td>
+      <td>
+        <span>
+          América Móvil
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "indianred",
+            }
+          }
+        >
+          MX$ 5,400.00
+        </span>
+      </td>
+      <td>
+        <span>
+          57
+        </span>
+      </td>
+      <td>
+        <span>
+          (886) 271 4211
+        </span>
+      </td>
+      <td>
+        <span>
+          eduardo@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Miguel Ángel Rodríguez
+        </span>
+      </td>
+      <td>
+        <span>
+          FEMSA
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 11,000.00
+        </span>
+      </td>
+      <td>
+        <span>
+          40
+        </span>
+      </td>
+      <td>
+        <span>
+          (197) 651 8811
+        </span>
+      </td>
+      <td>
+        <span>
+          miguel@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Mariana Gómez
+        </span>
+      </td>
+      <td>
+        <span>
+          Banorte
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 16,900.00
+        </span>
+      </td>
+      <td>
+        <span>
+          34
+        </span>
+      </td>
+      <td>
+        <span>
+          (396) 702 3554
+        </span>
+      </td>
+      <td>
+        <span>
+          mariana@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Alejandro Fernández
+        </span>
+      </td>
+      <td>
+        <span>
+          Grupo México
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 17,700.00
+        </span>
+      </td>
+      <td>
+        <span>
+          41
+        </span>
+      </td>
+      <td>
+        <span>
+          (542) 591 3978
+        </span>
+      </td>
+      <td>
+        <span>
+          alejandro@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Gabriela López
+        </span>
+      </td>
+      <td>
+        <span>
+          Grupo Inbursa
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 10,100.00
+        </span>
+      </td>
+      <td>
+        <span>
+          65
+        </span>
+      </td>
+      <td>
+        <span>
+          (783) 560 4847
+        </span>
+      </td>
+      <td>
+        <span>
+          gabriela@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Alejandra Díaz
+        </span>
+      </td>
+      <td>
+        <span>
+          Cemex
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "indianred",
+            }
+          }
+        >
+          MX$ 6,500.00
+        </span>
+      </td>
+      <td>
+        <span>
+          27
+        </span>
+      </td>
+      <td>
+        <span>
+          (862) 721 8605
+        </span>
+      </td>
+      <td>
+        <span>
+          alejandra@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Juan Carlos Martínez
+        </span>
+      </td>
+      <td>
+        <span>
+          Grupo Televisa
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 14,000.00
+        </span>
+      </td>
+      <td>
+        <span>
+          38
+        </span>
+      </td>
+      <td>
+        <span>
+          (973) 322 3993
+        </span>
+      </td>
+      <td>
+        <span>
+          juan@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          José Luis Pérez
+        </span>
+      </td>
+      <td>
+        <span>
+          Alfa
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 20,400.00
+        </span>
+      </td>
+      <td>
+        <span>
+          50
+        </span>
+      </td>
+      <td>
+        <span>
+          (226) 806 3427
+        </span>
+      </td>
+      <td>
+        <span>
+          jose@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          María Carmen García
+        </span>
+      </td>
+      <td>
+        <span>
+          Grupo Bimbo
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 23,700.00
+        </span>
+      </td>
+      <td>
+        <span>
+          29
+        </span>
+      </td>
+      <td>
+        <span>
+          (907) 702 7639
+        </span>
+      </td>
+      <td>
+        <span>
+          maria@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Adriana Sánchez
+        </span>
+      </td>
+      <td>
+        <span>
+          Liverpool
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 33,800.00
+        </span>
+      </td>
+      <td>
+        <span>
+          23
+        </span>
+      </td>
+      <td>
+        <span>
+          (248) 255 7702
+        </span>
+      </td>
+      <td>
+        <span>
+          adriana@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Table component renders correctly with editable mode 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        nombre
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Compañía
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Salario
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "palegreen",
+          }
+        }
+      >
+        Edad
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Télefono
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Correo
+      </th>
+      <th>
+        Borrar
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <input
+          defaultValue="Eduardo González"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          América Móvil
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={5400}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={57}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(886) 271 4211"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="eduardo@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="Miguel Ángel Rodríguez"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          FEMSA
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={11000}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={40}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(197) 651 8811"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="miguel@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="Mariana Gómez"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          Banorte
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={16900}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={34}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(396) 702 3554"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="mariana@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="Alejandro Fernández"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          Grupo México
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={17700}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={41}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(542) 591 3978"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="alejandro@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="Gabriela López"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          Grupo Inbursa
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={10100}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={65}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(783) 560 4847"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="gabriela@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="Alejandra Díaz"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          Cemex
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={6500}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={27}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(862) 721 8605"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="alejandra@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="Juan Carlos Martínez"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          Grupo Televisa
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={14000}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={38}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(973) 322 3993"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="juan@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="José Luis Pérez"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          Alfa
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={20400}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={50}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(226) 806 3427"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="jose@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="María Carmen García"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          Grupo Bimbo
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={23700}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={29}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(907) 702 7639"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="maria@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          defaultValue="Adriana Sánchez"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <span>
+          Liverpool
+        </span>
+      </td>
+      <td>
+        <input
+          defaultValue={33800}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue={23}
+          onChange={[Function]}
+          type="number"
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="(248) 255 7702"
+          onChange={[Function]}
+        />
+      </td>
+      <td>
+        <input
+          defaultValue="adriana@gmail.com"
+          onChange={[Function]}
+          type="email"
+        />
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Table component renders correctly with search 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        nombre
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Compañía
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Salario
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Edad
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Télefono
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Correo
+      </th>
+      <th>
+        Borrar
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span>
+          Miguel Ángel Rodríguez
+        </span>
+      </td>
+      <td>
+        <span>
+          FEMSA
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          MX$ 11,000.00
+        </span>
+      </td>
+      <td>
+        <span>
+          40
+        </span>
+      </td>
+      <td>
+        <span>
+          (197) 651 8811
+        </span>
+      </td>
+      <td>
+        <span>
+          miguel@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Table component renders correctly with sorter and USD 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        nombre
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Compañía
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Salario
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "palegreen",
+          }
+        }
+      >
+        Edad
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Télefono
+      </th>
+      <th
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "",
+          }
+        }
+      >
+        Correo
+      </th>
+      <th>
+        Borrar
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span>
+          Eduardo González
+        </span>
+      </td>
+      <td>
+        <span>
+          América Móvil
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "indianred",
+            }
+          }
+        >
+          US$ 246.00
+        </span>
+      </td>
+      <td>
+        <span>
+          57
+        </span>
+      </td>
+      <td>
+        <span>
+          (886) 271 4211
+        </span>
+      </td>
+      <td>
+        <span>
+          eduardo@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Miguel Ángel Rodríguez
+        </span>
+      </td>
+      <td>
+        <span>
+          FEMSA
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          US$ 502.00
+        </span>
+      </td>
+      <td>
+        <span>
+          40
+        </span>
+      </td>
+      <td>
+        <span>
+          (197) 651 8811
+        </span>
+      </td>
+      <td>
+        <span>
+          miguel@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Mariana Gómez
+        </span>
+      </td>
+      <td>
+        <span>
+          Banorte
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          US$ 771.00
+        </span>
+      </td>
+      <td>
+        <span>
+          34
+        </span>
+      </td>
+      <td>
+        <span>
+          (396) 702 3554
+        </span>
+      </td>
+      <td>
+        <span>
+          mariana@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Alejandro Fernández
+        </span>
+      </td>
+      <td>
+        <span>
+          Grupo México
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          US$ 808.00
+        </span>
+      </td>
+      <td>
+        <span>
+          41
+        </span>
+      </td>
+      <td>
+        <span>
+          (542) 591 3978
+        </span>
+      </td>
+      <td>
+        <span>
+          alejandro@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Gabriela López
+        </span>
+      </td>
+      <td>
+        <span>
+          Grupo Inbursa
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          US$ 461.00
+        </span>
+      </td>
+      <td>
+        <span>
+          65
+        </span>
+      </td>
+      <td>
+        <span>
+          (783) 560 4847
+        </span>
+      </td>
+      <td>
+        <span>
+          gabriela@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Alejandra Díaz
+        </span>
+      </td>
+      <td>
+        <span>
+          Cemex
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "indianred",
+            }
+          }
+        >
+          US$ 296.00
+        </span>
+      </td>
+      <td>
+        <span>
+          27
+        </span>
+      </td>
+      <td>
+        <span>
+          (862) 721 8605
+        </span>
+      </td>
+      <td>
+        <span>
+          alejandra@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Juan Carlos Martínez
+        </span>
+      </td>
+      <td>
+        <span>
+          Grupo Televisa
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          US$ 639.00
+        </span>
+      </td>
+      <td>
+        <span>
+          38
+        </span>
+      </td>
+      <td>
+        <span>
+          (973) 322 3993
+        </span>
+      </td>
+      <td>
+        <span>
+          juan@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          José Luis Pérez
+        </span>
+      </td>
+      <td>
+        <span>
+          Alfa
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          US$ 931.00
+        </span>
+      </td>
+      <td>
+        <span>
+          50
+        </span>
+      </td>
+      <td>
+        <span>
+          (226) 806 3427
+        </span>
+      </td>
+      <td>
+        <span>
+          jose@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          María Carmen García
+        </span>
+      </td>
+      <td>
+        <span>
+          Grupo Bimbo
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          US$ 1,082.00
+        </span>
+      </td>
+      <td>
+        <span>
+          29
+        </span>
+      </td>
+      <td>
+        <span>
+          (907) 702 7639
+        </span>
+      </td>
+      <td>
+        <span>
+          maria@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Adriana Sánchez
+        </span>
+      </td>
+      <td>
+        <span>
+          Liverpool
+        </span>
+      </td>
+      <td>
+        <span
+          style={
+            Object {
+              "color": "seagreen",
+            }
+          }
+        >
+          US$ 1,543.00
+        </span>
+      </td>
+      <td>
+        <span>
+          23
+        </span>
+      </td>
+      <td>
+        <span>
+          (248) 255 7702
+        </span>
+      </td>
+      <td>
+        <span>
+          adriana@gmail.com
+        </span>
+      </td>
+      <td>
+        <button
+          onClick={[Function]}
+        >
+          Borrar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
