@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import employees from './employees'
 
 class App extends Component {
-  render() {
+  render () {
     console.log(employees)
     return (
       <div id='employees'>
@@ -42,18 +42,18 @@ class App extends Component {
         <p>Ejecutar SASS con <code>sass -w css/main.scss:src/main.css</code></p>
         <p>El CSS para la tabla puedes colocarlo en el archivo <code>css/main.scss</code></p>
         <p>La tabla debe contener las siguientes características, algunas necesitarán agregar clases con CSS</p>
-          <ol>
-            <li>Las filas deben de alternar el color del fondo</li>
-            <li>Al hacer hover en una fila debe cambiar el color del fondo</li>
-            <li>Los montos deben ir alineados a la derecha</li>
-            <li>Los caracteres de los montos deben estar monoespaciados</li>
-            <li>Si el salario es menor a 10,000 mostrarlo en color rojo, si es mayor mostrarlo en color verde</li>
-            <li>Los botones de texto (como agregar nuevo empleado o imprimir a consola) deben tener fondo transparente y tener texto y borde en color verde</li>
-            <li>Al hacer hover deben de poner su color de fondo con el mismo color del borde y el texto pasa a ser color blanco, esto debe tener una transición</li>
-          </ol>
+        <ol>
+          <li>Las filas deben de alternar el color del fondo</li>
+          <li>Al hacer hover en una fila debe cambiar el color del fondo</li>
+          <li>Los montos deben ir alineados a la derecha</li>
+          <li>Los caracteres de los montos deben estar monoespaciados</li>
+          <li>Si el salario es menor a 10,000 mostrarlo en color rojo, si es mayor mostrarlo en color verde</li>
+          <li>Los botones de texto (como agregar nuevo empleado o imprimir a consola) deben tener fondo transparente y tener texto y borde en color verde</li>
+          <li>Al hacer hover deben de poner su color de fondo con el mismo color del borde y el texto pasa a ser color blanco, esto debe tener una transición</li>
+        </ol>
       </div>
-    );
+    )
   }
 }
 
-export default App; 
+export default App
