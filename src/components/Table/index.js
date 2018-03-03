@@ -3,46 +3,85 @@ import PropTypes from 'prop-types'
 import Row from '../Row'
 import { normalizeString } from '../../utils'
 
-const Heading = ({text, name, sortBy, sortedBy, currency }) => {
-  return (<th
-    onClick={sortBy(name)}
-    style={{background: `${sortedBy === name ? 'palegreen' : ''}`}}>
-    {text}
-  </th>)
+const Heading = ({ text, name, sortBy, sortedBy, currency }) => {
+  return (
+    <th
+      onClick={sortBy(name)}
+      style={{ background: `${sortedBy === name ? 'palegreen' : ''}` }}
+    >
+      {text}
+    </th>
+  )
 }
 
-const Table = ({employees, sortBy, sortedBy, currency, changeType, deleteEmploy, search}) => {
-
+const Table = ({
+  employees,
+  sortBy,
+  sortedBy,
+  currency,
+  changeType,
+  deleteEmploy,
+  search,
+  onEditField,
+  editable
+}) => {
   const searchNormalized = normalizeString(search)
   return (
     <table>
       <thead>
         <tr>
-          <Heading sortBy={sortBy} name='name' text='nombre' sortedBy={sortedBy} />
-          <Heading sortBy={sortBy} name='company' text='Compañía' sortedBy={sortedBy} />
-          <Heading sortBy={sortBy} name='salary' text='Salario' sortedBy={sortedBy} />
+          <Heading
+            sortBy={sortBy}
+            name='name'
+            text='nombre'
+            sortedBy={sortedBy}
+          />
+          <Heading
+            sortBy={sortBy}
+            name='company'
+            text='Compañía'
+            sortedBy={sortedBy}
+          />
+          <Heading
+            sortBy={sortBy}
+            name='salary'
+            text='Salario'
+            sortedBy={sortedBy}
+          />
           <Heading sortBy={sortBy} name='age' text='Edad' sortedBy={sortedBy} />
-          <Heading sortBy={sortBy} name='phone' text='Télefono' sortedBy={sortedBy} />
-          <Heading sortBy={sortBy} name='email' text='Correo' sortedBy={sortedBy} />
+          <Heading
+            sortBy={sortBy}
+            name='phone'
+            text='Télefono'
+            sortedBy={sortedBy}
+          />
+          <Heading
+            sortBy={sortBy}
+            name='email'
+            text='Correo'
+            sortedBy={sortedBy}
+          />
           <th>Borrar</th>
         </tr>
       </thead>
       <tbody>
-        {
-          employees
-          .filter(employ =>
-            normalizeString(employ.name).includes(searchNormalized) ||
-            normalizeString(employ.company).includes(searchNormalized)
-            )
-          .map(employ =>
+        {employees
+          .filter(
+            employ =>
+              normalizeString(employ.name).includes(searchNormalized) ||
+              normalizeString(employ.company).includes(searchNormalized)
+          )
+          .map(employ => (
             <Row
               {...employ}
               key={employ.id}
               currency={currency}
               changeType={changeType}
               deleteEmploy={deleteEmploy}
-            />)
-        }
+              onEditField={onEditField}
+              editable={editable}
+            />
+          ))}
       </tbody>
     </table>
   )
@@ -54,8 +93,8 @@ Table.propTypes = {
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       company: PropTypes.string.isRequired,
-      salary: PropTypes.number.isRequired,
-      age: PropTypes.number.isRequired,
+      salary: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      age: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       phone: PropTypes.string.isRequired,
       email: PropTypes.string.isRequired
     })
