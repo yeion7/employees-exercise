@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search component renders correctly 1`] = `
-<div>
-  <input
-    data-test="input"
-    onChange={[Function]}
-    placeholder="Buscar empleado o empresa"
-    type="search"
-  />
-</div>
+<input
+  aria-label="Buscar empleado o empresa"
+  className="search__input"
+  data-test="input"
+  onChange={[Function]}
+  placeholder="Buscar empleado o empresa"
+  type="search"
+/>
 `;

@@ -1,18 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Row component renders correctly with MXN 1`] = `
-<tr>
-  <td>
-    <span>
+<tr
+  className="row"
+>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       Eduardo González
     </span>
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       América Móvil
     </span>
   </td>
-  <td>
+  <td
+    className="row__cell row__cell--right"
+    tabIndex="0"
+  >
     <span
       style={
         Object {
@@ -23,45 +38,84 @@ exports[`Row component renders correctly with MXN 1`] = `
       MX$ 5,400.00
     </span>
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       57
     </span>
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       (886) 271 4211
     </span>
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       eduardo@gmail.com
     </span>
   </td>
-  <td>
+  <td
+    className="row__cell"
+  >
     <button
+      aria-label="Eliminar empleado"
+      className="row__button"
       data-test="delete-0"
       onClick={[Function]}
     >
-      Borrar
+      <span
+        aria-label="emoji cubo de basura"
+        role="img"
+      >
+        🗑
+      </span>
     </button>
   </td>
 </tr>
 `;
 
 exports[`Row component renders correctly with USD 1`] = `
-<tr>
-  <td>
-    <span>
+<tr
+  className="row"
+>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       Eduardo González
     </span>
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       América Móvil
     </span>
   </td>
-  <td>
+  <td
+    className="row__cell row__cell--right"
+    tabIndex="0"
+  >
     <span
       style={
         Object {
@@ -72,139 +126,235 @@ exports[`Row component renders correctly with USD 1`] = `
       US$ 271.00
     </span>
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       57
     </span>
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       (886) 271 4211
     </span>
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       eduardo@gmail.com
     </span>
   </td>
-  <td>
+  <td
+    className="row__cell"
+  >
     <button
+      aria-label="Eliminar empleado"
+      className="row__button"
       data-test="delete-0"
       onClick={[Function]}
     >
-      Borrar
+      <span
+        aria-label="emoji cubo de basura"
+        role="img"
+      >
+        🗑
+      </span>
     </button>
   </td>
 </tr>
 `;
 
 exports[`Row component renders correctly with editable mode 1`] = `
-<tr>
-  <td>
+<tr
+  className="row"
+>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-name-0"
       defaultValue="Eduardo González"
       onChange={[Function]}
     />
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       América Móvil
     </span>
   </td>
-  <td>
+  <td
+    className="row__cell row__cell--right"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-salary-0"
       defaultValue={5400}
       onChange={[Function]}
       type="number"
     />
   </td>
-  <td>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-age-0"
       defaultValue={57}
       onChange={[Function]}
       type="number"
     />
   </td>
-  <td>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-phone-0"
       defaultValue="(886) 271 4211"
       onChange={[Function]}
     />
   </td>
-  <td>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-email-0"
       defaultValue="eduardo@gmail.com"
       onChange={[Function]}
       type="email"
     />
   </td>
-  <td>
+  <td
+    className="row__cell"
+  >
     <button
+      aria-label="Eliminar empleado"
+      className="row__button"
       data-test="delete-0"
       onClick={[Function]}
     >
-      Borrar
+      <span
+        aria-label="emoji cubo de basura"
+        role="img"
+      >
+        🗑
+      </span>
     </button>
   </td>
 </tr>
 `;
 
 exports[`Row component renders correctly without salary 1`] = `
-<tr>
-  <td>
+<tr
+  className="row"
+>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-name-0"
       defaultValue="Eduardo González"
       onChange={[Function]}
     />
   </td>
-  <td>
-    <span>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
+    <span
+      className="row__span"
+    >
       América Móvil
     </span>
   </td>
-  <td>
+  <td
+    className="row__cell row__cell--right"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-salary-0"
       defaultValue={0}
       onChange={[Function]}
       type="number"
     />
   </td>
-  <td>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-age-0"
       defaultValue={57}
       onChange={[Function]}
       type="number"
     />
   </td>
-  <td>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-phone-0"
       defaultValue="(886) 271 4211"
       onChange={[Function]}
     />
   </td>
-  <td>
+  <td
+    className="row__cell"
+    tabIndex="0"
+  >
     <input
+      className="row__input"
       data-test="input-email-0"
       defaultValue="eduardo@gmail.com"
       onChange={[Function]}
       type="email"
     />
   </td>
-  <td>
+  <td
+    className="row__cell"
+  >
     <button
+      aria-label="Eliminar empleado"
+      className="row__button"
       data-test="delete-0"
       onClick={[Function]}
     >
-      Borrar
+      <span
+        aria-label="emoji cubo de basura"
+        role="img"
+      >
+        🗑
+      </span>
     </button>
   </td>
 </tr>

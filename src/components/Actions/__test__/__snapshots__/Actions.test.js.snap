@@ -1,73 +1,147 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Actions component renders correctly with MXN and not editable 1`] = `
-<div>
+<div
+  className="action__container"
+>
   <button
+    aria-label="Agregar nuevo empleado"
+    className="action__button--primary"
     data-test="add"
     onClick={[Function]}
   >
-    Agregar empleado
+    <span
+      aria-label="agregar empleado con emoji sumar"
+      role="img"
+    >
+      ➕ Agregar empleado
+    </span>
   </button>
   <button
+    aria-label="Editar"
+    className="action__button--primary"
     data-test="edit"
     onClick={[Function]}
   >
-    Editar
+    <span
+      aria-label="editar con emoji escribir"
+      role="img"
+    >
+      📝 Editar
+    </span>
   </button>
   <button
+    aria-label="Mostrar salario en Dolares"
+    className="action__button--primary"
     data-test="currency"
     onClick={[Function]}
   >
-    Mostrar en 
-    Dolares
+    <span
+      aria-label="mostrar en Dolares con emoji moneda"
+      role="img"
+    >
+      💰 Mostrar en 
+      Dolares
+    </span>
   </button>
   <button
+    aria-label="Imprimir en consola"
+    className="action__button--primary"
     data-test="print"
     onClick={[Function]}
   >
-    Imprimir en consola
+    <span
+      aria-label="imprimir en consola con emoji imprimir"
+      role="img"
+    >
+      🖨 Imprimir en consola
+    </span>
   </button>
   <button
+    aria-label="Eliminar cambios"
+    className="action__button--primary"
     data-test="delete"
     onClick={[Function]}
   >
-    Eliminar cambios
+    <span
+      aria-label="Eliminar cambios con emoji basura"
+      role="img"
+    >
+      🗑 Eliminar cambios
+    </span>
   </button>
 </div>
 `;
 
 exports[`Actions component renders correctly with USD and  editable 1`] = `
-<div>
+<div
+  className="action__container"
+>
   <button
+    aria-label="Agregar nuevo empleado"
+    className="action__button--primary"
     data-test="add"
     onClick={[Function]}
   >
-    Agregar empleado
+    <span
+      aria-label="agregar empleado con emoji sumar"
+      role="img"
+    >
+      ➕ Agregar empleado
+    </span>
   </button>
   <button
+    aria-label="Guardar cambios"
+    className="action__button--primary"
     data-test="edit"
     onClick={[Function]}
   >
-    Guardar
+    <span
+      aria-label="guardar cambios con emoji guardar"
+      role="img"
+    >
+      💾 Guardar
+    </span>
   </button>
   <button
+    aria-label="Mostrar salario en Pesos"
+    className="action__button--primary"
     data-test="currency"
     onClick={[Function]}
   >
-    Mostrar en 
-    Pesos
+    <span
+      aria-label="mostrar en Pesos con emoji moneda"
+      role="img"
+    >
+      💰 Mostrar en 
+      Pesos
+    </span>
   </button>
   <button
+    aria-label="Imprimir en consola"
+    className="action__button--primary"
     data-test="print"
     onClick={[Function]}
   >
-    Imprimir en consola
+    <span
+      aria-label="imprimir en consola con emoji imprimir"
+      role="img"
+    >
+      🖨 Imprimir en consola
+    </span>
   </button>
   <button
+    aria-label="Eliminar cambios"
+    className="action__button--primary"
     data-test="delete"
     onClick={[Function]}
   >
-    Eliminar cambios
+    <span
+      aria-label="Eliminar cambios con emoji basura"
+      role="img"
+    >
+      🗑 Eliminar cambios
+    </span>
   </button>
 </div>
 `;

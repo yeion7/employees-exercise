@@ -6,14 +6,14 @@ exports[`App component Edit button editable state change when click button 1`] =
     <Search
       onSearch={[Function]}
     >
-      <div>
-        <input
-          data-test="input"
-          onChange={[Function]}
-          placeholder="Buscar empleado o empresa"
-          type="search"
-        />
-      </div>
+      <input
+        aria-label="Buscar empleado o empresa"
+        className="search__input"
+        data-test="input"
+        onChange={[Function]}
+        placeholder="Buscar empleado o empresa"
+        type="search"
+      />
     </Search>
     <Actions
       addEmploy={[Function]}
@@ -24,37 +24,74 @@ exports[`App component Edit button editable state change when click button 1`] =
       returnOriginal={[Function]}
       toggleEdit={[Function]}
     >
-      <div>
+      <div
+        className="action__container"
+      >
         <button
+          aria-label="Agregar nuevo empleado"
+          className="action__button--primary"
           data-test="add"
           onClick={[Function]}
         >
-          Agregar empleado
+          <span
+            aria-label="agregar empleado con emoji sumar"
+            role="img"
+          >
+            ➕ Agregar empleado
+          </span>
         </button>
         <button
+          aria-label="Editar"
+          className="action__button--primary"
           data-test="edit"
           onClick={[Function]}
         >
-          Editar
+          <span
+            aria-label="editar con emoji escribir"
+            role="img"
+          >
+            📝 Editar
+          </span>
         </button>
         <button
+          aria-label="Mostrar salario en Dolares"
+          className="action__button--primary"
           data-test="currency"
           onClick={[Function]}
         >
-          Mostrar en 
-          Dolares
+          <span
+            aria-label="mostrar en Dolares con emoji moneda"
+            role="img"
+          >
+            💰 Mostrar en 
+            Dolares
+          </span>
         </button>
         <button
+          aria-label="Imprimir en consola"
+          className="action__button--primary"
           data-test="print"
           onClick={[Function]}
         >
-          Imprimir en consola
+          <span
+            aria-label="imprimir en consola con emoji imprimir"
+            role="img"
+          >
+            🖨 Imprimir en consola
+          </span>
         </button>
         <button
+          aria-label="Eliminar cambios"
+          className="action__button--primary"
           data-test="delete"
           onClick={[Function]}
         >
-          Eliminar cambios
+          <span
+            aria-label="Eliminar cambios con emoji basura"
+            role="img"
+          >
+            🗑 Eliminar cambios
+          </span>
         </button>
       </div>
     </Actions>
@@ -162,25 +199,46 @@ exports[`App component Edit button editable state change when click button 1`] =
       sortBy={[Function]}
       sortedBy={null}
     >
-      <table>
-        <thead>
+      <table
+        cellSpacing="0"
+        className="table"
+        tabIndex="0"
+      >
+        <caption
+          className="visuallyhidden"
+        >
+          Tabla de empleados 
+        </caption>
+        <thead
+          className="table__head"
+          tabIndex="0"
+        >
           <tr>
             <Heading
               name="name"
               sortBy={[Function]}
               sortedBy={null}
-              text="nombre"
+              text="Nombre"
             >
               <th
+                className="heading__cell"
                 data-test="sort-name"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
-                nombre
+                Nombre
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -190,15 +248,24 @@ exports[`App component Edit button editable state change when click button 1`] =
               text="Compañía"
             >
               <th
+                className="heading__cell"
                 data-test="sort-company"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Compañía
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -208,15 +275,24 @@ exports[`App component Edit button editable state change when click button 1`] =
               text="Salario"
             >
               <th
+                className="heading__cell"
                 data-test="sort-salary"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Salario
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -226,15 +302,24 @@ exports[`App component Edit button editable state change when click button 1`] =
               text="Edad"
             >
               <th
+                className="heading__cell"
                 data-test="sort-age"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Edad
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -244,15 +329,24 @@ exports[`App component Edit button editable state change when click button 1`] =
               text="Télefono"
             >
               <th
+                className="heading__cell"
                 data-test="sort-phone"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Télefono
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -262,18 +356,30 @@ exports[`App component Edit button editable state change when click button 1`] =
               text="Correo"
             >
               <th
+                className="heading__cell"
                 data-test="sort-email"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Correo
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
-            <th>
+            <th
+              scope="col"
+              tabIndex="0"
+            >
               Borrar
             </th>
           </tr>
@@ -294,18 +400,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(886) 271 4211"
             salary={5400}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Eduardo González
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   América Móvil
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -316,27 +437,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 5,400.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   57
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (886) 271 4211
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   eduardo@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-0"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -356,18 +501,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(197) 651 8811"
             salary={11000}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Miguel Ángel Rodríguez
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   FEMSA
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -378,27 +538,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 11,000.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   40
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (197) 651 8811
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   miguel@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-1"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -418,18 +602,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(396) 702 3554"
             salary={16900}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Mariana Gómez
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Banorte
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -440,27 +639,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 16,900.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   34
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (396) 702 3554
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   mariana@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-2"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -480,18 +703,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(542) 591 3978"
             salary={17700}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Alejandro Fernández
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Grupo México
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -502,27 +740,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 17,700.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   41
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (542) 591 3978
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   alejandro@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-3"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -542,18 +804,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(783) 560 4847"
             salary={10100}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Gabriela López
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Grupo Inbursa
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -564,27 +841,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 10,100.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   65
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (783) 560 4847
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   gabriela@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-4"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -604,18 +905,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(862) 721 8605"
             salary={6500}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Alejandra Díaz
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Cemex
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -626,27 +942,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 6,500.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   27
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (862) 721 8605
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   alejandra@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-5"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -666,18 +1006,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(973) 322 3993"
             salary={14000}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Juan Carlos Martínez
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Grupo Televisa
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -688,27 +1043,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 14,000.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   38
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (973) 322 3993
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   juan@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-6"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -728,18 +1107,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(226) 806 3427"
             salary={20400}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   José Luis Pérez
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Alfa
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -750,27 +1144,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 20,400.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   50
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (226) 806 3427
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   jose@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-7"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -790,18 +1208,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(907) 702 7639"
             salary={23700}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   María Carmen García
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Grupo Bimbo
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -812,27 +1245,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 23,700.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   29
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (907) 702 7639
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   maria@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-8"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -852,18 +1309,33 @@ exports[`App component Edit button editable state change when click button 1`] =
             phone="(248) 255 7702"
             salary={33800}
           >
-            <tr>
-              <td>
-                <span>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Adriana Sánchez
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Liverpool
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <span
                   style={
                     Object {
@@ -874,27 +1346,51 @@ exports[`App component Edit button editable state change when click button 1`] =
                   MX$ 33,800.00
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   23
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   (248) 255 7702
                 </span>
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   adriana@gmail.com
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-9"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -912,14 +1408,14 @@ exports[`App component Edit button editable state change when click button 2`] =
     <Search
       onSearch={[Function]}
     >
-      <div>
-        <input
-          data-test="input"
-          onChange={[Function]}
-          placeholder="Buscar empleado o empresa"
-          type="search"
-        />
-      </div>
+      <input
+        aria-label="Buscar empleado o empresa"
+        className="search__input"
+        data-test="input"
+        onChange={[Function]}
+        placeholder="Buscar empleado o empresa"
+        type="search"
+      />
     </Search>
     <Actions
       addEmploy={[Function]}
@@ -930,37 +1426,74 @@ exports[`App component Edit button editable state change when click button 2`] =
       returnOriginal={[Function]}
       toggleEdit={[Function]}
     >
-      <div>
+      <div
+        className="action__container"
+      >
         <button
+          aria-label="Agregar nuevo empleado"
+          className="action__button--primary"
           data-test="add"
           onClick={[Function]}
         >
-          Agregar empleado
+          <span
+            aria-label="agregar empleado con emoji sumar"
+            role="img"
+          >
+            ➕ Agregar empleado
+          </span>
         </button>
         <button
+          aria-label="Guardar cambios"
+          className="action__button--primary"
           data-test="edit"
           onClick={[Function]}
         >
-          Guardar
+          <span
+            aria-label="guardar cambios con emoji guardar"
+            role="img"
+          >
+            💾 Guardar
+          </span>
         </button>
         <button
+          aria-label="Mostrar salario en Dolares"
+          className="action__button--primary"
           data-test="currency"
           onClick={[Function]}
         >
-          Mostrar en 
-          Dolares
+          <span
+            aria-label="mostrar en Dolares con emoji moneda"
+            role="img"
+          >
+            💰 Mostrar en 
+            Dolares
+          </span>
         </button>
         <button
+          aria-label="Imprimir en consola"
+          className="action__button--primary"
           data-test="print"
           onClick={[Function]}
         >
-          Imprimir en consola
+          <span
+            aria-label="imprimir en consola con emoji imprimir"
+            role="img"
+          >
+            🖨 Imprimir en consola
+          </span>
         </button>
         <button
+          aria-label="Eliminar cambios"
+          className="action__button--primary"
           data-test="delete"
           onClick={[Function]}
         >
-          Eliminar cambios
+          <span
+            aria-label="Eliminar cambios con emoji basura"
+            role="img"
+          >
+            🗑 Eliminar cambios
+          </span>
         </button>
       </div>
     </Actions>
@@ -1068,25 +1601,46 @@ exports[`App component Edit button editable state change when click button 2`] =
       sortBy={[Function]}
       sortedBy={null}
     >
-      <table>
-        <thead>
+      <table
+        cellSpacing="0"
+        className="table"
+        tabIndex="0"
+      >
+        <caption
+          className="visuallyhidden"
+        >
+          Tabla de empleados 
+        </caption>
+        <thead
+          className="table__head"
+          tabIndex="0"
+        >
           <tr>
             <Heading
               name="name"
               sortBy={[Function]}
               sortedBy={null}
-              text="nombre"
+              text="Nombre"
             >
               <th
+                className="heading__cell"
                 data-test="sort-name"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
-                nombre
+                Nombre
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -1096,15 +1650,24 @@ exports[`App component Edit button editable state change when click button 2`] =
               text="Compañía"
             >
               <th
+                className="heading__cell"
                 data-test="sort-company"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Compañía
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -1114,15 +1677,24 @@ exports[`App component Edit button editable state change when click button 2`] =
               text="Salario"
             >
               <th
+                className="heading__cell"
                 data-test="sort-salary"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Salario
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -1132,15 +1704,24 @@ exports[`App component Edit button editable state change when click button 2`] =
               text="Edad"
             >
               <th
+                className="heading__cell"
                 data-test="sort-age"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Edad
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -1150,15 +1731,24 @@ exports[`App component Edit button editable state change when click button 2`] =
               text="Télefono"
             >
               <th
+                className="heading__cell"
                 data-test="sort-phone"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Télefono
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
             <Heading
@@ -1168,18 +1758,30 @@ exports[`App component Edit button editable state change when click button 2`] =
               text="Correo"
             >
               <th
+                className="heading__cell"
                 data-test="sort-email"
                 onClick={[Function]}
+                scope="col"
                 style={
                   Object {
                     "background": "",
                   }
                 }
+                tabIndex="0"
               >
                 Correo
+                 
+                <span
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
               </th>
             </Heading>
-            <th>
+            <th
+              scope="col"
+              tabIndex="0"
+            >
               Borrar
             </th>
           </tr>
@@ -1200,56 +1802,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(886) 271 4211"
             salary={5400}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-0"
                   defaultValue="Eduardo González"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   América Móvil
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-0"
                   defaultValue={5400}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-0"
                   defaultValue={57}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-0"
                   defaultValue="(886) 271 4211"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-0"
                   defaultValue="eduardo@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-0"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1269,56 +1907,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(197) 651 8811"
             salary={11000}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-1"
                   defaultValue="Miguel Ángel Rodríguez"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   FEMSA
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-1"
                   defaultValue={11000}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-1"
                   defaultValue={40}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-1"
                   defaultValue="(197) 651 8811"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-1"
                   defaultValue="miguel@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-1"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1338,56 +2012,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(396) 702 3554"
             salary={16900}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-2"
                   defaultValue="Mariana Gómez"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Banorte
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-2"
                   defaultValue={16900}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-2"
                   defaultValue={34}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-2"
                   defaultValue="(396) 702 3554"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-2"
                   defaultValue="mariana@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-2"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1407,56 +2117,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(542) 591 3978"
             salary={17700}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-3"
                   defaultValue="Alejandro Fernández"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Grupo México
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-3"
                   defaultValue={17700}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-3"
                   defaultValue={41}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-3"
                   defaultValue="(542) 591 3978"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-3"
                   defaultValue="alejandro@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-3"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1476,56 +2222,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(783) 560 4847"
             salary={10100}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-4"
                   defaultValue="Gabriela López"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Grupo Inbursa
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-4"
                   defaultValue={10100}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-4"
                   defaultValue={65}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-4"
                   defaultValue="(783) 560 4847"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-4"
                   defaultValue="gabriela@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-4"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1545,56 +2327,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(862) 721 8605"
             salary={6500}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-5"
                   defaultValue="Alejandra Díaz"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Cemex
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-5"
                   defaultValue={6500}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-5"
                   defaultValue={27}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-5"
                   defaultValue="(862) 721 8605"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-5"
                   defaultValue="alejandra@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-5"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1614,56 +2432,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(973) 322 3993"
             salary={14000}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-6"
                   defaultValue="Juan Carlos Martínez"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Grupo Televisa
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-6"
                   defaultValue={14000}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-6"
                   defaultValue={38}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-6"
                   defaultValue="(973) 322 3993"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-6"
                   defaultValue="juan@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-6"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1683,56 +2537,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(226) 806 3427"
             salary={20400}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-7"
                   defaultValue="José Luis Pérez"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Alfa
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-7"
                   defaultValue={20400}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-7"
                   defaultValue={50}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-7"
                   defaultValue="(226) 806 3427"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-7"
                   defaultValue="jose@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-7"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1752,56 +2642,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(907) 702 7639"
             salary={23700}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-8"
                   defaultValue="María Carmen García"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Grupo Bimbo
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-8"
                   defaultValue={23700}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-8"
                   defaultValue={29}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-8"
                   defaultValue="(907) 702 7639"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-8"
                   defaultValue="maria@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-8"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>
@@ -1821,56 +2747,92 @@ exports[`App component Edit button editable state change when click button 2`] =
             phone="(248) 255 7702"
             salary={33800}
           >
-            <tr>
-              <td>
+            <tr
+              className="row"
+            >
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-name-9"
                   defaultValue="Adriana Sánchez"
                   onChange={[Function]}
                 />
               </td>
-              <td>
-                <span>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
+                <span
+                  className="row__span"
+                >
                   Liverpool
                 </span>
               </td>
-              <td>
+              <td
+                className="row__cell row__cell--right"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-salary-9"
                   defaultValue={33800}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-age-9"
                   defaultValue={23}
                   onChange={[Function]}
                   type="number"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-phone-9"
                   defaultValue="(248) 255 7702"
                   onChange={[Function]}
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+                tabIndex="0"
+              >
                 <input
+                  className="row__input"
                   data-test="input-email-9"
                   defaultValue="adriana@gmail.com"
                   onChange={[Function]}
                   type="email"
                 />
               </td>
-              <td>
+              <td
+                className="row__cell"
+              >
                 <button
+                  aria-label="Eliminar empleado"
+                  className="row__button"
                   data-test="delete-9"
                   onClick={[Function]}
                 >
-                  Borrar
+                  <span
+                    aria-label="emoji cubo de basura"
+                    role="img"
+                  >
+                    🗑
+                  </span>
                 </button>
               </td>
             </tr>

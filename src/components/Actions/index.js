@@ -65,7 +65,7 @@ const Actions = ({
       </button>
       <button
         className="action__button--primary"
-        ata-test="delete"
+        data-test="delete"
         onClick={returnOriginal}
         aria-label="Eliminar cambios"
       >
