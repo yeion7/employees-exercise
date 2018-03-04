@@ -7,7 +7,7 @@ import './index.css'
  * If edit a field not re-render every field
  */
 class Row extends PureComponent {
-  render () {
+  render() {
     const {
       id,
       name,
@@ -27,43 +27,42 @@ class Row extends PureComponent {
     const salaryValue = currency === 'USD' ? salary / changeType : salary
 
     return (
-      <tr className='row'>
-        <td className='row__cell'>
+      <tr className="row">
+        <td className="row__cell" tabIndex="0">
           {editable ? (
             <input
-              className='row__input'
+              className="row__input"
               data-test={`input-name-${id}`}
               defaultValue={name}
               onChange={onEditField(id, 'name')}
             />
           ) : (
-            <span className='row__span'>{name}</span>
+            <span className="row__span">{name}</span>
           )}
         </td>
-        <td className='row__cell'>
+        <td className="row__cell" tabIndex="0">
           {editable && added ? (
             <input
-              className='row__input'
+              className="row__input"
               data-test={`input-company-${id}`}
               defaultValue={company}
               onChange={onEditField(id, 'company')}
             />
           ) : (
-            <span className='row__span'>{company}</span>
+            <span className="row__span">{company}</span>
           )}
         </td>
-        <td className='right'>
+        <td className="row__cell row__cell--right" tabIndex="0">
           {editable ? (
             <input
-              className='row__input'
+              className="row__input"
               data-test={`input-salary-${id}`}
-              type='number'
+              type="number"
               defaultValue={salary}
               onChange={onEditField(id, 'salary')}
             />
           ) : (
             <span
-              className='row__span row__span--right'
               style={{ color: `${salary < 10000 ? 'indianred' : 'seagreen'}` }}
             >
               {parseInt(salaryValue, 10).toLocaleString('es-MX', {
@@ -75,51 +74,54 @@ class Row extends PureComponent {
             </span>
           )}
         </td>
-        <td className='row__cell'>
+        <td className="row__cell" tabIndex="0">
           {editable ? (
             <input
-              className='row__input'
+              className="row__input"
               data-test={`input-age-${id}`}
-              type='number'
+              type="number"
               defaultValue={age}
               onChange={onEditField(id, 'age')}
             />
           ) : (
-            <span className='row__span'>{age}</span>
+            <span className="row__span">{age}</span>
           )}
         </td>
-        <td className='row__cell'>
+        <td className="row__cell" tabIndex="0">
           {editable ? (
             <input
-              className='row__input'
+              className="row__input"
               data-test={`input-phone-${id}`}
               defaultValue={phone}
               onChange={onEditField(id, 'phone')}
             />
           ) : (
-            <span className='row__span'>{phone}</span>
+            <span className="row__span">{phone}</span>
           )}
         </td>
-        <td className='row__cell'>
+        <td className="row__cell" tabIndex="0">
           {editable ? (
             <input
-              className='row__input'
+              className="row__input"
               data-test={`input-email-${id}`}
-              type='email'
+              type="email"
               defaultValue={email}
               onChange={onEditField(id, 'email')}
             />
           ) : (
-            <span className='row__span'>{email}</span>
+            <span className="row__span">{email}</span>
           )}
         </td>
-        <td className='row__cell'>
+        <td className="row__cell">
           <button
-            className='row__button'
+            className="row__button"
             data-test={`delete-${id}`}
             onClick={() => deleteEmploy(id)}
+            aria-label="Eliminar empleado"
           >
-            🗑
+            <span role="img" aria-label="emoji cubo de basura">
+              🗑
+            </span>
           </button>
         </td>
       </tr>

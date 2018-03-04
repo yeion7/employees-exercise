@@ -7,12 +7,19 @@ import './index.css'
 const Heading = ({ text, name, sortBy, sortedBy, currency }) => {
   return (
     <th
-      className='heading__cell'
+      scope="col"
+      tabIndex="0"
+      className="heading__cell"
       data-test={`sort-${name}`}
       onClick={sortBy(name)}
       style={{ background: `${sortedBy === name ? 'mediumseagreen' : ''}` }}
     >
-      {text} {sortedBy === name ? '▴' : '▾'}
+      {text}{' '}
+      {sortedBy === name ? (
+        <span aria-hidden="true">▴</span>
+      ) : (
+        <span aria-hidden="true">▾</span>
+      )}
     </th>
   )
 }
@@ -30,41 +37,44 @@ const Table = ({
 }) => {
   const searchNormalized = normalizeString(search)
   return (
-    <table cellSpacing='0' className='table'>
-      <thead className='table__head'>
+    <table cellSpacing="0" className="table" tabIndex="0">
+      <caption className="visuallyhidden">Tabla de empleados </caption>
+      <thead className="table__head" tabIndex="0">
         <tr>
           <Heading
             sortBy={sortBy}
-            name='name'
-            text='Nombre'
+            name="name"
+            text="Nombre"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='company'
-            text='Compañía'
+            name="company"
+            text="Compañía"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='salary'
-            text='Salario'
+            name="salary"
+            text="Salario"
             sortedBy={sortedBy}
           />
-          <Heading sortBy={sortBy} name='age' text='Edad' sortedBy={sortedBy} />
+          <Heading sortBy={sortBy} name="age" text="Edad" sortedBy={sortedBy} />
           <Heading
             sortBy={sortBy}
-            name='phone'
-            text='Télefono'
+            name="phone"
+            text="Télefono"
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name='email'
-            text='Correo'
+            name="email"
+            text="Correo"
             sortedBy={sortedBy}
           />
-          <th>Borrar</th>
+          <th tabIndex="0" scope="col">
+            Borrar
+          </th>
         </tr>
       </thead>
       <tbody>
