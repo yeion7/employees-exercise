@@ -1,5 +1,20 @@
 # Lista de empleados
 
+*url:* https://build-suynxexobc.now.sh
+*funcionamiento:* http://recordit.co/DRG6B2frWV
+
+## scripts
+
+* `build-css` compila los archivos sass de `./src`
+* `watch-css` compila los archivos sass de `./src` en modo watch
+* `start-js` compila archivos `.js` de `./src` y inicia servidor
+* `start` inicia entorno de *desarrollo*
+* `build-js` construye los archivos `.js` dentro `.src`
+* `build` construye el proyecto para *producción*
+* `test` ejecuta los test en modo watch
+* `test:coverage` ejecuta los test y muestra la covertura
+* `lint` verifica el código con *standard*
+
 ## Para JS
 
 - [x] Clona el proyecto e instala las dependencias
@@ -20,16 +35,10 @@
 
 ## Para CSS
 
-Ejecutar SASS con `sass -w css/main.scss:src/main.css`
-
-El CSS para la tabla puedes colocarlo en el archivo `css/main.scss`
-
-La tabla debe contener las siguientes características, algunas necesitarán agregar clases con CSS
-
-- [ ]  Las filas deben de alternar el color del fondo
-- [ ]  Al hacer hover en una fila debe cambiar el color del fondo
-- [ ]  Los montos deben ir alineados a la derecha
-- [ ]  Los caracteres de los montos deben estar monoespaciados
+- [x]  Las filas deben de alternar el color del fondo
+- [x]  Al hacer hover en una fila debe cambiar el color del fondo
+- [x]  Los montos deben ir alineados a la derecha
+- [x]  Los caracteres de los montos deben estar monoespaciados
 - [x]  Si el salario es menor a 10,000 mostrarlo en color rojo, si es mayor mostrarlo en color verde
-- [ ]  Los botones de texto (como agregar nuevo empleado o imprimir a consola) deben tener fondo transparente y tener texto y borde en color verde
-- [ ]  Al hacer hover deben de poner su color de fondo con el mismo color del borde y el texto pasa a ser color blanco, esto debe tener una transición
+- [x]  Los botones de texto (como agregar nuevo empleado o imprimir a consola) deben tener fondo transparente y tener texto y borde en color verde
+- [x]  Al hacer hover deben de poner su color de fondo con el mismo color del borde y el texto pasa a ser color blanco, esto debe tener una transición
