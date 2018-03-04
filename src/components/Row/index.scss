@@ -1,0 +1,26 @@
+.row {
+  &:nth-child(even) {
+    background: aliceblue;
+  }
+
+  &:hover {
+    background: #f4b642;
+  }
+
+  &__cell {
+    padding: 10px 20px;
+
+    &--right {
+      text-align: right;
+      font-family: monospace, monospace;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;
+    background: transparent;
+    border: 0;
+  }
+}

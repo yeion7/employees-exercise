@@ -18,7 +18,7 @@ describe('Row component', () => {
           age={employ.age}
           phone={employ.phone}
           email={employ.email}
-          currency="MXN"
+          currency='MXN'
           changeType={19.9}
           editable={false}
           deleteEmploy={fn}
@@ -42,7 +42,7 @@ describe('Row component', () => {
           age={employ.age}
           phone={employ.phone}
           email={employ.email}
-          currency="USD"
+          currency='USD'
           changeType={19.9}
           editable={false}
           deleteEmploy={fn}
@@ -67,9 +67,9 @@ describe('Row component', () => {
           age={employ.age}
           phone={employ.phone}
           email={employ.email}
-          currency="USD"
+          currency='USD'
           changeType={19.9}
-          editable={true}
+          editable
           deleteEmploy={fn}
           onEditField={factory}
         />
@@ -91,9 +91,9 @@ describe('Row component', () => {
           age={employ.age}
           phone={employ.phone}
           email={employ.email}
-          currency="USD"
+          currency='USD'
           changeType={19.9}
-          editable={true}
+          editable
           deleteEmploy={fn}
           onEditField={factory}
         />

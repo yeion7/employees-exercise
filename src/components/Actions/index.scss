@@ -1,0 +1,23 @@
+.action {
+  &__container {
+    margin: 15px 0;
+  }
+
+  &__button {
+    &--primary {
+      background: transparent;
+      border-color: mediumseagreen;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 4px;
+      font-size: 1em;
+      transition: all 0.4s ease 0s;
+      min-height: 50px;
+
+      &:hover {
+        background: mediumseagreen;
+        color: white;
+      }
+    }
+  }
+}

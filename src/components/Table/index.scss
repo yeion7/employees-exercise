@@ -1,0 +1,18 @@
+.table {
+  // display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  min-width: 100%;
+
+  &__head > tr {
+    background: #f4b642;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.heading {
+  &__cell {
+    padding: 10px 0;
+  }
+}

@@ -1,14 +1,14 @@
 export const compareBy = key => (a, b) => {
-  if (a[key] < b[key]) return -1;
-  if (a[key] > b[key]) return 1;
-  return 0;
-};
+  if (a[key] < b[key]) return -1
+  if (a[key] > b[key]) return 1
+  return 0
+}
 
 export const normalizeString = string =>
   string
     .normalize('NFD')
     .replace(/[^\w]/g, '')
-    .toUpperCase();
+    .toUpperCase()
 
 export const createID = () => {
   return (
@@ -16,8 +16,8 @@ export const createID = () => {
     Math.random()
       .toString(36)
       .substr(2, 9)
-  );
-};
+  )
+}
 
 export const createEmploy = ({
   name = '',
@@ -35,4 +35,4 @@ export const createEmploy = ({
   phone,
   email,
   added: true
-});
+})

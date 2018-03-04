@@ -31,7 +31,16 @@
   },
   "standard": {
     "parser": "babel-eslint",
-    "globals": ["it", "localStorage", "jest", "expect"]
+    "globals": [
+      "it",
+      "localStorage",
+      "jest",
+      "expect",
+      "describe",
+      "beforeEach",
+      "mount",
+      "afterEach"
+    ]
   },
   "jest": {
     "collectCoverageFrom": [

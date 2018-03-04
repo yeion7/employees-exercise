@@ -1,7 +1,7 @@
 import React from 'react'
 import App from '../App'
 import employees from '../components/Table/__mocks__/employees'
-import { createEmploy, compareBy } from '../utils'
+import { compareBy } from '../utils'
 
 let wrapper
 

@@ -2,15 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Row from '../Row'
 import { normalizeString } from '../../utils'
+import './index.css'
 
 const Heading = ({ text, name, sortBy, sortedBy, currency }) => {
   return (
     <th
+      className='heading__cell'
       data-test={`sort-${name}`}
       onClick={sortBy(name)}
-      style={{ background: `${sortedBy === name ? 'palegreen' : ''}` }}
+      style={{ background: `${sortedBy === name ? 'mediumseagreen' : ''}` }}
     >
-      {text}
+      {text} {sortedBy === name ? '▴' : '▾'}
     </th>
   )
 }
@@ -28,38 +30,38 @@ const Table = ({
 }) => {
   const searchNormalized = normalizeString(search)
   return (
-    <table>
-      <thead>
+    <table cellSpacing='0' className='table'>
+      <thead className='table__head'>
         <tr>
           <Heading
             sortBy={sortBy}
-            name="name"
-            text="nombre"
+            name='name'
+            text='Nombre'
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name="company"
-            text="Compañía"
+            name='company'
+            text='Compañía'
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name="salary"
-            text="Salario"
+            name='salary'
+            text='Salario'
             sortedBy={sortedBy}
           />
-          <Heading sortBy={sortBy} name="age" text="Edad" sortedBy={sortedBy} />
+          <Heading sortBy={sortBy} name='age' text='Edad' sortedBy={sortedBy} />
           <Heading
             sortBy={sortBy}
-            name="phone"
-            text="Télefono"
+            name='phone'
+            text='Télefono'
             sortedBy={sortedBy}
           />
           <Heading
             sortBy={sortBy}
-            name="email"
-            text="Correo"
+            name='email'
+            text='Correo'
             sortedBy={sortedBy}
           />
           <th>Borrar</th>

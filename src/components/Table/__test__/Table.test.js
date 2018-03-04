@@ -14,11 +14,11 @@ describe('Table component', () => {
         <Table
           employees={employees}
           sortBy={factory}
-          sortedBy=""
-          currency="MXN"
-          changeType="21.9"
+          sortedBy=''
+          currency='MXN'
+          changeType='21.9'
           deleteEmploy={fn}
-          search=""
+          search=''
           onEditField={factory}
           editable={false}
         />
@@ -36,11 +36,11 @@ describe('Table component', () => {
         <Table
           employees={employees}
           sortBy={factory}
-          sortedBy=""
-          currency="MXN"
-          changeType="21.9"
+          sortedBy=''
+          currency='MXN'
+          changeType='21.9'
           deleteEmploy={fn}
-          search="Miguel Ángel Rodríguez"
+          search='Miguel Ángel Rodríguez'
           onEditField={factory}
           editable={false}
         />
@@ -58,11 +58,11 @@ describe('Table component', () => {
         <Table
           employees={employees}
           sortBy={factory}
-          sortedBy="age"
-          currency="USD"
-          changeType="21.9"
+          sortedBy='age'
+          currency='USD'
+          changeType='21.9'
           deleteEmploy={fn}
-          search=""
+          search=''
           onEditField={factory}
           editable={false}
         />
@@ -80,13 +80,13 @@ describe('Table component', () => {
         <Table
           employees={employees}
           sortBy={factory}
-          sortedBy="age"
-          currency="USD"
-          changeType="21.9"
+          sortedBy='age'
+          currency='USD'
+          changeType='21.9'
           deleteEmploy={fn}
-          search=""
+          search=''
           onEditField={factory}
-          editable={true}
+          editable
         />
       )
       .toJSON()

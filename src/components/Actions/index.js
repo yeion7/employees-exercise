@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './index.css'
 
 const Actions = ({
   toggleEdit,
@@ -11,21 +12,41 @@ const Actions = ({
   returnOriginal
 }) => {
   return (
-    <div>
-      <button data-test="add" onClick={addEmploy}>
-        Agregar empleado
+    <div className="action__container">
+      <button
+        className="action__button--primary"
+        data-test="add"
+        onClick={addEmploy}
+      >
+        ➕ Agregar empleado
       </button>
-      <button data-test="edit" onClick={toggleEdit}>
-        {editable ? 'Guardar' : 'Editar'}
+      <button
+        className="action__button--primary"
+        data-test="edit"
+        onClick={toggleEdit}
+      >
+        {editable ? '💾 Guardar' : '📝 Editar'}
       </button>
-      <button data-test="currency" onClick={changeCurrency}>
-        Mostrar en {currency === 'MXN' ? 'Dolares' : 'Pesos'}
+      <button
+        className="action__button--primary"
+        data-test="currency"
+        onClick={changeCurrency}
+      >
+        💰 Mostrar en {currency === 'MXN' ? 'Dolares' : 'Pesos'}
       </button>
-      <button data-test="print" onClick={printTable}>
-        Imprimir en consola
+      <button
+        className="action__button--primary"
+        data-test="print"
+        onClick={printTable}
+      >
+        🖨 Imprimir en consola
       </button>
-      <button data-test="delete" onClick={returnOriginal}>
-        Eliminar cambios
+      <button
+        className="action__button--primary"
+        ata-test="delete"
+        onClick={returnOriginal}
+      >
+        🗑 Eliminar cambios
       </button>
     </div>
   )

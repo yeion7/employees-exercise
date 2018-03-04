@@ -1,13 +1,13 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import './index.css'
 
 /**
  * This element use PureComponent for optimize edit mode
  * If edit a field not re-render every field
  */
-
 class Row extends PureComponent {
-  render() {
+  render () {
     const {
       id,
       name,
@@ -27,39 +27,43 @@ class Row extends PureComponent {
     const salaryValue = currency === 'USD' ? salary / changeType : salary
 
     return (
-      <tr>
-        <td>
+      <tr className='row'>
+        <td className='row__cell'>
           {editable ? (
             <input
+              className='row__input'
               data-test={`input-name-${id}`}
               defaultValue={name}
               onChange={onEditField(id, 'name')}
             />
           ) : (
-            <span>{name}</span>
+            <span className='row__span'>{name}</span>
           )}
         </td>
-        <td>
+        <td className='row__cell'>
           {editable && added ? (
             <input
+              className='row__input'
               data-test={`input-company-${id}`}
               defaultValue={company}
               onChange={onEditField(id, 'company')}
             />
           ) : (
-            <span>{company}</span>
+            <span className='row__span'>{company}</span>
           )}
         </td>
-        <td>
+        <td className='right'>
           {editable ? (
             <input
+              className='row__input'
               data-test={`input-salary-${id}`}
-              type="number"
+              type='number'
               defaultValue={salary}
               onChange={onEditField(id, 'salary')}
             />
           ) : (
             <span
+              className='row__span row__span--right'
               style={{ color: `${salary < 10000 ? 'indianred' : 'seagreen'}` }}
             >
               {parseInt(salaryValue, 10).toLocaleString('es-MX', {
@@ -71,44 +75,51 @@ class Row extends PureComponent {
             </span>
           )}
         </td>
-        <td>
+        <td className='row__cell'>
           {editable ? (
             <input
+              className='row__input'
               data-test={`input-age-${id}`}
-              type="number"
+              type='number'
               defaultValue={age}
               onChange={onEditField(id, 'age')}
             />
           ) : (
-            <span>{age}</span>
+            <span className='row__span'>{age}</span>
           )}
         </td>
-        <td>
+        <td className='row__cell'>
           {editable ? (
             <input
+              className='row__input'
               data-test={`input-phone-${id}`}
               defaultValue={phone}
               onChange={onEditField(id, 'phone')}
             />
           ) : (
-            <span>{phone}</span>
+            <span className='row__span'>{phone}</span>
           )}
         </td>
-        <td>
+        <td className='row__cell'>
           {editable ? (
             <input
+              className='row__input'
               data-test={`input-email-${id}`}
-              type="email"
+              type='email'
               defaultValue={email}
               onChange={onEditField(id, 'email')}
             />
           ) : (
-            <span>{email}</span>
+            <span className='row__span'>{email}</span>
           )}
         </td>
-        <td>
-          <button data-test={`delete-${id}`} onClick={() => deleteEmploy(id)}>
-            Borrar
+        <td className='row__cell'>
+          <button
+            className='row__button'
+            data-test={`delete-${id}`}
+            onClick={() => deleteEmploy(id)}
+          >
+            🗑
           </button>
         </td>
       </tr>

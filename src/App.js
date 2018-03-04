@@ -135,7 +135,7 @@ class App extends Component {
     this.setState({ data: employees })
   }
 
-  render() {
+  render () {
     const {
       data,
       sortedBy,

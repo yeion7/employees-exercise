@@ -12,7 +12,7 @@ describe('Actions component', () => {
         <Actions
           toggleEdit={fn}
           changeCurrency={fn}
-          currency="MXN"
+          currency='MXN'
           printTable={fn}
           editable={false}
           addEmploy={fn}
@@ -31,9 +31,9 @@ describe('Actions component', () => {
         <Actions
           toggleEdit={fn}
           changeCurrency={fn}
-          currency="USD"
+          currency='USD'
           printTable={fn}
-          editable={true}
+          editable
           addEmploy={fn}
           returnOriginal={fn}
         />
